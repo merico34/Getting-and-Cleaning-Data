@@ -35,3 +35,5 @@ data <- cbind(subjects, y, x)
 
 molten <- melt(data, id=c("subjects", "activities"))
 tidyData <- dcast(molten, subjects + activities ~ variable, mean)
+
+write.table(tidyData, file="tidyData.txt", sep=",")
