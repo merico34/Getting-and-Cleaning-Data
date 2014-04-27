@@ -4,7 +4,7 @@ The raw data set is based on experiments that have been carried out with a group
 
 The R script transforms the raw data set into a tidy data set. The following details are about the tidy data set and the steps to receive it.
 
-### The Variables of the tidy data set (in order):
+### The variables of the tidy data set (in order):
 * subjects
 * activities
 * tBodyAcc-mean()-X
@@ -74,7 +74,7 @@ The R script transforms the raw data set into a tidy data set. The following det
 * fBodyBodyGyroJerkMag-mean()
 * fBodyBodyGyroJerkMag-std()
 
-### The Rows of the tidy data set:
+### The rows of the tidy data set:
 Each row corresponds to one subject doing one activity.
 There are a total of 30 subjects, numbered "1" to "30".
 Each subject did 6 different activities:
@@ -85,7 +85,7 @@ Each subject did 6 different activities:
 * Standing
 * Laying
 
-### The steps to clean up the data
+### The steps to clean up the data:
 It is assumed that the raw data are in the working directory having the same file structure as given initially.
 (i.e. the test and train data are in there own folders.)
 The data in the "Inertial Signals" folders are ignored.
