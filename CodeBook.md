@@ -89,7 +89,7 @@ Each subject did 6 different activities:
 It is assumed that the raw data are in the working directory having the same file structure as given initially.
 (i.e. the test and train data are in there own folders.)
 The data in the "Inertial Signals" folders are ignored.
-The R script "run_analysis.R" uses one uncommen package ("reshape2") which ist loaded at the beginning.
+The R script "run_analysis.R" uses one uncommon package ("reshape2") which ist loaded at the beginning.
 
 A data.frame "subjects" is created by loading and merging the data from the "test" and "train" files.
 The merge is done by "rbind". The column is named "subjects".
@@ -105,7 +105,7 @@ The "x" data.frame is cleaned up by removing all columns that do not contain the
 of the measurements. The columns to drop from the data.frame are found by not matching any one of two regular expressions
 that check if the column name contains "-mean()" or "-std()".
 
-Finally all three data.frames("subjects","y","x") are merged into one data.frame by using cbind.
+Finally all three data.frames("subjects", "y", "x") are merged into one data.frame by using cbind.
 
 To make the data set tidy it must have unique row IDs.
 That means a single row is one subject doing one of his six activities.
